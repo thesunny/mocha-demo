@@ -13,5 +13,4 @@ export default function () {
   it('should equal if same number', function () {
     assert.equal(true, equals(1, 1))
   })
-
 }
