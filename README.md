@@ -1,7 +1,8 @@
 # Mocha Demo
 
-I like have my test units near the actual files that they test. This is
-especially useful when your project is larger because:
+I like to have my unit tests near the actual files that they test.
+
+This Mocha Demo lets you put your unit tests anywhere so long as they are named like `**.test.js` or `**.test.jsx`
 
 * Avoids using '../../../../schema/user/validator' type imports
 * Easy to see which files have tests
