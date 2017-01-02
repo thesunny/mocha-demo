@@ -18,10 +18,12 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "glob": "^7.1.1",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "npm-run-all": "^4.0.0"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require babel-polyfill ./test/test.jsx"
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill ./test/test.jsx",
+    "test:watch": "nodemon -e js,jsx -x npm run test"
   },
   "author": "",
   "license": "ISC"
