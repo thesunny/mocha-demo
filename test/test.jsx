@@ -6,7 +6,9 @@ import _ from 'underscore'
 global._ = _
 
 // get all files that look like *.test.js or *.test.jsx
-const paths = glob.sync(__dirname + '/../**/*.test.@(js|jsx)')
+const paths = glob.sync(__dirname + '/../**/*.test.@(js|jsx)', {
+  ignore: '/../node_modules/**'
+})
 
 // describe path and run a test for it
 paths.forEach((path) => {
